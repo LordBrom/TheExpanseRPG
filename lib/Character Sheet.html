@@ -15,15 +15,17 @@
         </button>
     </div>
     <div class="col black-bar">
-        <button class="white-text btn-invisible" type='roll' value='!theexpanse|||test|||@{character_name}|||[[3d6]]|||Income|||@{income_total}|||0|||?{Additional Modifiers|0}|||?{Target Number|None,x|Secret,???|5: Effortless,5|6: Adeptly,6|7: Routine,7|8: Simple,8|9: Easy,9|10: Mundane,10|11: Average,11|12: Tedious,12|13: Challenging,13|14: Tough,14|15: Hard,15|16: Arduous,16|17: Formidable,17|18: Strenuous,18|19: Imposing,19|20: Herculean,20|21: Nigh Impossible,21}'>
-            Income
-        </button>
-        <div class="float-right">
-            <label class="white-text">Base</label>
+        <div class="col" style="margin-right: 0px;width: auto;">
+            <button class="white-text btn-invisible" type='roll' value='!theexpanse|||test|||@{character_name}|||[[3d6]]|||Income|||@{income_total}|||0|||?{Additional Modifiers|0}|||?{Target Number|None,x|Secret,???|5: Effortless,5|6: Adeptly,6|7: Routine,7|8: Simple,8|9: Easy,9|10: Mundane,10|11: Average,11|12: Tedious,12|13: Challenging,13|14: Tough,14|15: Hard,15|16: Arduous,16|17: Formidable,17|18: Strenuous,18|19: Imposing,19|20: Herculean,20|21: Nigh Impossible,21}'>
+                Income
+            </button>
             <input type="number" name="attr_income" class="short" value="0" />
-            <label class="white-text">Total</label>
-            <input type="number" name="attr_income_modifiers" disabled="true" class="invisible" value="(@{income_mod_1})" />
-            <input type="number" name="attr_income_total" disabled="true" value="@{income}+(@{income_modifiers})" />
+            <label class="white-text">Max</label>
+            <input type="number" name="attr_income_total" class="short" value="0" />
+        </div>
+        <div class="col float-right" style="width: auto;">
+            <label class="white-text">Adv. Pts.</label>
+            <input type="number" name="attr_advancement_points" class="short" value="0" />
         </div>
     </div>
 </div>
